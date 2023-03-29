@@ -330,13 +330,15 @@ footer{
 
 
 .body{
-    padding: 20px;
+    padding: 3rem;
     background-color: #f9f7f4;
 }
 .body_top{
     display: grid;
     grid-template-columns: 70% 30%;
     align-items: center;
+    padding-bottom: 2rem;
+    gap:1rem;
 }
 .top_lable h1{
     font-size: 22px;
@@ -373,6 +375,7 @@ footer{
     display: grid;
     grid-template-columns: 70% 30%;
     grid-template-rows: auto auto;
+    gap:1rem;
 }
 .body_content-left{
     border: 1px solid black;
@@ -384,6 +387,7 @@ footer{
 }
 .bill_detail-lable h2{
     font-size: 16px;
+    padding: 0 10px;
     font-weight: 400;
     border-bottom: 1px solid black;
     align-items: center;
@@ -433,6 +437,7 @@ footer{
 }
 .payment-lable h2{
     font-size: 16px;
+    padding: 0 10px;
     font-weight: 400;
     border-bottom: 1px solid black;
     align-items: center;
@@ -504,7 +509,11 @@ input[type=number]::-webkit-inner-spin-button {
     margin-left: 10px;
 }
 
-.btn { border-radius: 5px; }
+.btn { 
+    margin-top: 2rem;
+    width: 300px;
+    border-radius: 5px; 
+}
 
 .btn:active { transform: scale(0.99); }
 
@@ -525,7 +534,7 @@ input[type=number]::-webkit-inner-spin-button {
 .btn-primary b { margin-right: 10px; }
 
 .payment-method .method .fill { color: var(--azure); }
-/* -----------checkout-tight-info--------------------------------------- */
+/* -----------checkout-right-info--------------------------------------- */
 .card_body-right{
     margin: 0px 0 0px 20px;
     padding: 15px;
