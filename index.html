@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Triple J Furniture</title>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</head>
+<body>
+    <nav class="l_navbar" id="l_navbar">
+        <ul class="sub_menu">
+            <li class="toggle_navbar_menu-close">
+                <a class="toggle_navbar_menu-close" onclick="closeLMenu()">
+                    <ion-icon name="close-outline"></ion-icon>
+                </a>
+            </li>
+            <li><a href="">Outdoor Daybeds</a></li>
+            <li><a href="">Outdoor Daybeds</a></li>
+            <li><a href="">Outdoor Daybeds</a></li>
+            <li><a href="">Outdoor Daybeds</a></li>
+        </ul>
+    </nav>
+        <section class="header">
+        <nav class="header__navbar">
+            <div class="toggle_navbar_menu">
+                <a class="toggle_navbar_menu_button" onclick="openLMenu()">
+                    <ion-icon name="menu"></ion-icon>
+                </a>
+            </div>
+            <div class="header__navbar-logo">
+                <a href="index.html"><img src="img/logo2.png"></a>
+            </div>
+            
+            <div class="header__navbar-search">
+                <input placeholder="SEARCH" type="header_navbar-search-text">
+                <button class="header__navbar-search-btn">
+                    <ion-icon name="search-outline"></ion-icon>
+                </button>
+            </div>
+            <div class="header__navbar-item">
+                <a  class="header_navbar-item-icon" onclick="openSearch()">
+                    <ion-icon class="icon-search" name="search-outline"></ion-icon>
+                </a>
+                <a class="header_navbar-item-icon" id="cart-icon">
+                    <ion-icon name="bag-handle-outline" ></ion-icon>
+                </a>
+                <a href="" class="header_navbar-item-icon">
+                    <ion-icon name="person-outline"></ion-icon>
+                </a>
+                <a href="" class="header_navbar-item-icon">
+                    <ion-icon name="call-outline"></ion-icon>
+                </a>
+                <div class="cart">
+                    <h2 class="cart-lable">Your Cart</h2>
+                    <div class="cart-content">
+
+                    </div>
+                    <div class="total-cart">
+                        <div class="total-lable">Total:</div>
+                        <div class="total-cart-price">$0</div>
+                    </div>
+                    <button type="button" class="btn-cart"><a href="cart.html">Buy Now</a></button>
+                    <button type="button" class="btn-close-cart" id="close-cart">Keep Shopping</button>
+                </div>
+                
+            </div> 
+        </nav>
+
+        <nav class="header_NavigationBar">
+            <li><a href="cartegory.html">Outdoor Daybeds</a></li>
+            <li><a href="cartegory.html">Outdoor Daybeds</a></li>
+            <li><a href="cartegory.html">Outdoor Daybeds</a></li>
+            <li><a href="cartegory.html">Outdoor Daybeds</a></li>
+            <li><a href="cartegory.html">Outdoor Daybeds</a></li>
+            <li><a href="cartegory.html">Outdoor Daybeds</a></li>
+        </nav>
+        </section>
+        <section id="Slider">
+        <div class="Slider_button">
+            <a href="#">SHOP NOW</a>
+        </div>
+        <!-- <video autoplay loop muted plays-inline class="back-video">
+            <source src="BONDILOUNGE 2 CHAIRS.mp4" type="video/mp4">
+        </video> -->
+        <div class="aspect-ratio-169">
+            <img src="img/slide1.jpg">
+            <img src="img/slide2.jpg">
+            <img src="img/slide3.jpg">
+        </div>
+        <div class="dot-container">
+            <div class="dot active"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+        </div>
+        </section>
+        <footer>
+        <section class="footer">
+            <div class="footer_col">
+                <li><h3>GET HELP</h3></li>
+                <li><a href="#">Delivery Information</a></li>
+                <li><a href="#">Product Care</a></li>
+                <li><a href="#">Help Centre</a></li>
+            </div>
+            <div class="footer_col">
+                <li><h3>INFORMATION</h3></li>
+                <li><a href="#">Our Story</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">As Seen In</a></li>
+            </div>
+            <div class="footer_col">
+                <li><h3>SUBSCRIBE TO NEWSLETTERS</h3></li>
+                <li><input placeholder="Your email" type="footer_right-join-email"></li>
+                <div class="footer_right-social-icon">
+                    <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+                    <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+                    <a href="#"><ion-icon name="logo-twitter"></ion-icon>
+                </div>
+            </div>
+        </section>
+        </footer>
+</body>
+<script src="jvcripts/main.js"></script>
+<script src="jvcripts/cart.js" defer></script>
+</html>

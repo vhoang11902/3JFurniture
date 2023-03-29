@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/cart.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
+    <title>Triple J Furniture</title>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.rawgit.com/igorlino/elevatezoom-plus/1.1.6/src/jquery.ez-plus.js"></script>    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.rawgit.com/igorlino/elevatezoom-plus/1.1.6/src/jquery.ez-plus.js"></script>
+</head>
+<body>
+    <!-- --------------------------Header-->
+    <nav class="l_navbar" id="l_navbar">
+        <ul class="sub_menu">
+            <li class="toggle_navbar_menu-close">
+                <a class="toggle_navbar_menu-close" onclick="closeLMenu()">
+                    <ion-icon name="close-outline"></ion-icon>
+                </a>
+            </li>
+            <li><a href="">Outdoor Daybeds</a></li>
+            <li><a href="">Outdoor Daybeds</a></li>
+            <li><a href="">Outdoor Daybeds</a></li>
+            <li><a href="">Outdoor Daybeds</a></li>
+        </ul>
+    </nav>
+    <section class="header">
+        <nav class="header__navbar">
+            <div class="toggle_navbar_menu">
+                <a class="toggle_navbar_menu_button" onclick="openLMenu()">
+                    <ion-icon name="menu"></ion-icon>
+                </a>
+            </div>
+            <div class="header__navbar-logo">
+                <a href="index.html"><img src="img/logo2.png"></a>
+            </div>
+            
+            <div class="header__navbar-search">
+                <input placeholder="SEARCH" type="header_navbar-search-text">
+                <button class="header__navbar-search-btn">
+                    <ion-icon name="search-outline"></ion-icon>
+                </button>
+            </div>
+            <div class="header__navbar-item">
+                <a  class="header_navbar-item-icon" onclick="openSearch()">
+                    <ion-icon class="icon-search" name="search-outline"></ion-icon>
+                </a>
+                <a class="header_navbar-item-icon" id="cart-icon">
+                    <ion-icon name="bag-handle-outline" ></ion-icon>
+                </a>
+                <a href="" class="header_navbar-item-icon">
+                    <ion-icon name="person-outline"></ion-icon>
+                </a>
+                <a href="" class="header_navbar-item-icon">
+                    <ion-icon name="call-outline"></ion-icon>
+                </a>
+                <div class="cart">
+                    <h2 class="cart-lable">Your Cart</h2>
+                    <div class="cart-content">
+
+                    </div>
+                    <div class="total-cart">
+                        <div class="total-lable">Total:</div>
+                        <div class="total-cart-price">$0</div>
+                    </div>
+                    <button type="button" class="btn-cart"><a href="cart.html">Buy Now</a></button>
+                    <button type="button" class="btn-close-cart" id="close-cart">Keep Shopping</button>
+                </div>
+            </div> 
+        </nav>
+        <nav class="header_NavigationBar">
+            <li><a href="product.html">Outdoor Daybeds</a></li>
+            <li><a href="">Outdoor Daybeds</a></li>
+            <li><a href="">Outdoor Daybeds</a></li>
+            <li><a href="">Outdoor Daybeds</a></li>
+            <li><a href="">Outdoor Daybeds</a></li>
+            <li><a href="">Outdoor Daybeds</a></li>
+        </nav>
+        </section>
+
+<!-- --------------------------PRODUCT -->
+    <section class="body_content">
+        <div class="card">
+            <div class="top_card">
+                <div class="lable">
+                    <h1>my card</h1>
+                </div>
+                <div class="card_total">
+                    <div class="card_total-left">
+                        <span>2 iterms</span>
+                    </div>
+                    <div class="card_total-right">
+                        <div class="card_total-right-label">Order total</div>
+                        <div class="card_total-right-num">
+                            $<span id="subtotal">0</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card_body">
+                <div class="card_body-left">
+                    <div class="card_list" id="product">
+                        <div class="card_list-img">
+                            <img src="img/slide1.jpg" alt="">
+                        </div>
+                        <div class="card_list-info">
+                            <div class="item-name">
+                                <a href="#">Bondi Lounge</a>
+                            </div>
+                            <div class="item-info">
+                                <span>Olive</span> <span>, </span> <span>4 Piece</span>
+                            </div>
+                            <div class="item-price">
+                                <div class="price">
+                                    $ <span id="price">1.25</span>
+                                </div>
+                                <div class="wrapper">
+                                    <button id="decrement">
+                                        <ion-icon name="remove-outline"></ion-icon>
+                                    </button>
+                                    <span id="quantity">1</span>
+                                    <button id="increment">
+                                        <ion-icon name="add-outline"></ion-icon>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card_list-delbtn">
+                            <button class="del-item">X</button>
+                        </div>
+                    </div>
+                    <div class="card_list" id="product">
+                        <div class="card_list-img">
+                            <img src="img/slide1.jpg" alt="">
+                        </div>
+                        <div class="card_list-info">
+                            <div class="item-name">
+                                <a href="#">Bondi Lounge</a>
+                            </div>
+                            <div class="item-info">
+                                <span>Olive</span> <span>, </span> <span>4 Piece</span>
+                            </div>
+                            <div class="item-price">
+                                <div class="price">
+                                    $ <span id="price">1.25</span>
+                                </div>
+                                <div class="wrapper">
+                                    <button id="decrement">
+                                        <ion-icon name="remove-outline"></ion-icon>
+                                    </button>
+                                    <span id="quantity">1</span>
+                                    <button id="increment">
+                                        <ion-icon name="add-outline"></ion-icon>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card_list-delbtn">
+                            <button class="del-item">X</button>
+                        </div>
+                    </div>
+                </div> 
+                <div class="card_body-right">
+                    <h3>ORDER SUMMARY</h3>
+                    <div class="sum-price-wrap">
+                        <div class="sum-price-info">
+                            <div class="sum-price-lable">
+                                Product total
+                            </div>
+                            <div class="sum-price-text">
+                                $<span id="totalTax">0</span>
+                            </div>
+                        </div>
+                        <div class="sum-price-info">
+                            <div class="sum-price-lable">
+                                shipping fee
+                            </div>
+                            <div class="sum-price-text">
+                                free
+                            </div>
+                        </div>
+                    </div>
+                    <div class="total-price">
+                        <div class="total-price-lable">
+                            Total
+                        </div>
+                        <div class="total">
+                            $<span id="total">0</span>
+                        </div>
+                    </div>
+                    <div class="btn-checkout">
+                        <button class="checkout" >
+                            <a href="checkout.html">CHECKOUT</a>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+<!-- --------------------------Footer -->
+<footer>
+    <section class="footer">
+        <div class="footer_col">
+            <li><h3>GET HELP</h3></li>
+            <li><a href="#">Delivery Information</a></li>
+            <li><a href="#">Product Care</a></li>
+            <li><a href="#">Help Centre</a></li>
+        </div>
+        <div class="footer_col">
+            <li><h3>INFORMATION</h3></li>
+            <li><a href="#">Our Story</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">As Seen In</a></li>
+        </div>
+        <div class="footer_col">
+            <li><h3>SUBSCRIBE TO NEWSLETTERS</h3></li>
+            <li><input placeholder="Your email" type="footer_right-join-email"></li>
+            <div class="footer_right-social-icon">
+                <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+                <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+                <a href="#"><ion-icon name="logo-twitter"></ion-icon>
+            </div>
+        </div>
+    </section>
+    </footer>
+</body>
+<script src="jvcripts/main.js"></script>
+<script src="jvcripts/product.js"></script>
+<script src="jvcripts/checkout.js"></script>
+<script src="jvcripts/cart.js"></script>
+</html>

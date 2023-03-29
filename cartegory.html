@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/cartegory.css">
+    <title>Triple J Furniture</title>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</head>
+<body>
+    <!-- --------------------------Header-->
+    <nav class="l_navbar" id="l_navbar">
+        <ul class="sub_menu">
+            <li class="toggle_navbar_menu-close">
+                <a class="toggle_navbar_menu-close" onclick="closeLMenu()">
+                    <ion-icon name="close-outline"></ion-icon>
+                </a>
+            </li>
+            <li><a href="">Outdoor Daybeds</a></li>
+            <li><a href="">Outdoor Daybeds</a></li>
+            <li><a href="">Outdoor Daybeds</a></li>
+            <li><a href="">Outdoor Daybeds</a></li>
+        </ul>
+    </nav>
+    <section class="header">
+        <nav class="header__navbar">
+            <div class="toggle_navbar_menu">
+                <a class="toggle_navbar_menu_button" onclick="openLMenu()">
+                    <ion-icon name="menu"></ion-icon>
+                </a>
+            </div>
+            <div class="header__navbar-logo">
+                <a href="index.html"><img src="img/logo2.png"></a>
+            </div>
+            
+            <div class="header__navbar-search">
+                <input placeholder="SEARCH" type="header_navbar-search-text">
+                <button class="header__navbar-search-btn">
+                    <ion-icon name="search-outline"></ion-icon>
+                </button>
+            </div>
+            <div class="header__navbar-item">
+                <a  class="header_navbar-item-icon" onclick="openSearch()">
+                    <ion-icon class="icon-search" name="search-outline"></ion-icon>
+                </a>
+                <a class="header_navbar-item-icon" id="cart-icon">
+                    <ion-icon name="bag-handle-outline" ></ion-icon>
+                </a>
+                <a href="" class="header_navbar-item-icon">
+                    <ion-icon name="person-outline"></ion-icon>
+                </a>
+                <a href="" class="header_navbar-item-icon">
+                    <ion-icon name="call-outline"></ion-icon>
+                </a>
+                <div class="cart">
+                    <h2 class="cart-lable">Your Cart</h2>
+                    <div class="cart-content">
+
+                    </div>
+                    <div class="total-cart">
+                        <div class="total-lable">Total:</div>
+                        <div class="total-cart-price">$0</div>
+                    </div>
+                    <button type="button" class="btn-cart"><a href="cart.html">Buy Now</a></button>
+                    <button type="button" class="btn-close-cart" id="close-cart">Keep Shopping</button>
+                </div>
+            </div> 
+        </nav>
+        <nav class="header_NavigationBar">
+            <li><a href="">Outdoor Daybeds</a></li>
+            <li><a href="">Outdoor Daybeds</a></li>
+            <li><a href="">Outdoor Daybeds</a></li>
+            <li><a href="">Outdoor Daybeds</a></li>
+            <li><a href="">Outdoor Daybeds</a></li>
+            <li><a href="">Outdoor Daybeds</a></li>
+        </nav>
+        </section>
+
+<!-- --------------------------Cartegory -->
+    <nav class="cartegory">
+        <h1 class="label">Outdoor Daybeds</h1>
+        
+        <div class="cartegory_filter"> 
+            <div class="cartegory_filter_btn" id="btn_1">
+                <span class="filter_label">Material</span>
+                <span class="filter_label_icon">
+                    <ion-icon name="chevron-down-outline"></ion-icon>
+                </span>
+                <ul class="cartegory_filter_droplist">
+                    <li class="filter_list">
+                        <span class="checkbox">
+                            <ion-icon name="checkmark-outline"></ion-icon>
+                        </span>
+                        <span class="filter_text">Alumilum</span>
+                    </li>
+                    <li class="filter_list">
+                        
+                        <span class="filter_text">Alumilum</span>
+                    </li>
+                    <li class="filter_list">
+                        <span class="checkbox">
+                            <ion-icon name="checkmark-outline"></ion-icon>
+                        </span>
+                        <span class="filter_text">Alumilum</span>
+                    </li>
+                    <li class="filter_list">
+                        <span class="checkbox">
+                            <ion-icon name="checkmark-outline"></ion-icon>
+                        </span>
+                        <span class="filter_text">Alumilum</span>
+                    </li>
+                    <li class="filter_list">
+                        <span class="checkbox">
+                            <ion-icon name="checkmark-outline"></ion-icon>
+                        </span>
+                        <span class="filter_text">Alumilum</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="cartegory_filter_btn" id="btn_2">
+                <span class="filter_label">Cartegory</span>
+                <span class="filter_label_icon">
+                    <ion-icon name="chevron-down-outline"></ion-icon>
+                </span>
+                <ul class="cartegory_filter_droplist">
+                    <li class="filter_list">
+                        <span class="checkbox">
+                            <ion-icon name="checkmark-outline"></ion-icon>
+                        </span>
+                        <span class="filter_text">Alumilum</span>
+                    </li>
+                    <li class="filter_list">
+                        <span class="checkbox">
+                            <ion-icon name="checkmark-outline"></ion-icon>
+                        </span>
+                        <span class="filter_text">Alumilum</span>
+                    </li>
+                    <li class="filter_list">
+                        <span class="checkbox">
+                            <ion-icon name="checkmark-outline"></ion-icon>
+                        </span>
+                        <span class="filter_text">Alumilum</span>
+                    </li>
+                </ul>
+            </div>
+            
+        </div> 
+        <div class="cartegory_sort"> 
+            <div class="cartegory_filter_btn" id="btn_3">
+                <span class="filter_label">SORT BY RECOMMENDED</span>
+                <span class="filter_label_icon">
+                    <ion-icon name="chevron-down-outline"></ion-icon>
+                </span>
+                <ul class="cartegory_filter_droplist">
+                    <li class="filter_list">
+                        <span class="filter_text">Price: High to Low</span>
+                    </li>
+                    <li class="filter_list">
+                        <span class="filter_text">Price: Low to High</span>
+                    </li>
+                    <li class="filter_list">
+                        <span class="filter_text">New Arrivel</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="shop-content">
+            <!-- product1 -->
+                <div class="product-box">
+                    <a href="product.html">
+                        <img class="product-img" src="img cartegory/1. BONDI LOUNGE/RING0094-PhotoRoom.png" alt="">
+                        <h2 class="product-title">BONDI LOUNGE</h2>
+                        <span class="price">$25</span>
+                    </a>
+                    <button class="add-cart">Add to cart</button>
+                </div>
+            <!-- product1 -->
+            <div class="product-box">
+                <a href="product.html">
+                    <img class="product-img" src="img cartegory/2. LOTUS LOUNGE/LOTUS3.JPG" alt="">
+                    <h2 class="product-title">LOTUS LOUNGE</h2>
+                    <span class="price">$25</span>
+                </a>
+                <button class="add-cart">Add to cart</button>
+            </div>
+            <!-- product1 -->
+            <div class="product-box">
+                <a href="product.html">
+                    <img class="product-img" src="img cartegory/3. LOTUS MODULAR/LOTUS 4.jpg" alt="">
+                    <h2 class="product-title">LOTUS MODULAR</h2>
+                    <span class="price">$25</span>
+                </a>
+                <button class="add-cart">Add to cart</button>
+            </div>
+            <!-- product1 -->
+            <div class="product-box">
+                <a href="product.html">
+                    <img class="product-img" src="img cartegory/1. BONDI LOUNGE/RING0094-PhotoRoom.png" alt="">
+                    <h2 class="product-title">BONDI LOUNGE</h2>
+                    <span class="price">$25</span>
+                </a>
+                <button class="add-cart">Add to cart</button>
+            </div>
+            <!-- product1 -->
+            <div class="product-box">
+                <a href="product.html">
+                    <img class="product-img" src="img cartegory/1. BONDI LOUNGE/RING0094-PhotoRoom.png" alt="">
+                    <h2 class="product-title">BONDI LOUNGE</h2>
+                    <span class="price">$25</span>
+                </a>
+                <button class="add-cart">Add to cart</button>
+            </div>
+            <!-- product1 -->
+            <div class="product-box">
+                <a href="product.html">
+                    <img class="product-img" src="img cartegory/1. BONDI LOUNGE/RING0094-PhotoRoom.png" alt="">
+                    <h2 class="product-title">BONDI LOUNGE</h2>
+                    <span class="price">$25</span>
+                </a>
+                <button class="add-cart">Add to cart</button>
+            </div>
+            <!-- product1 -->
+            <div class="product-box">
+                <a href="product.html">
+                    <img class="product-img" src="img cartegory/1. BONDI LOUNGE/RING0094-PhotoRoom.png" alt="">
+                    <h2 class="product-title">BONDI LOUNGE</h2>
+                    <span class="price">$25</span>
+                </a>
+                <button class="add-cart">Add to cart</button>
+            </div>
+            <!-- product1 -->
+            <div class="product-box">
+                <a href="product.html">
+                    <img class="product-img" src="img cartegory/1. BONDI LOUNGE/RING0094-PhotoRoom.png" alt="">
+                    <h2 class="product-title">BONDI LOUNGE</h2>
+                    <span class="price">$25</span>
+                </a>
+                <button class="add-cart">Add to cart</button>
+            </div>
+        </div>
+    </nav>
+<!-- --------------------------Footer -->
+<footer>
+    <section class="footer">
+        <div class="footer_col">
+            <li><h3>GET HELP</h3></li>
+            <li><a href="#">Delivery Information</a></li>
+            <li><a href="#">Product Care</a></li>
+            <li><a href="#">Help Centre</a></li>
+        </div>
+        <div class="footer_col">
+            <li><h3>INFORMATION</h3></li>
+            <li><a href="#">Our Story</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">As Seen In</a></li>
+        </div>
+        <div class="footer_col">
+            <li><h3>SUBSCRIBE TO NEWSLETTERS</h3></li>
+            <li><input placeholder="Your email" type="footer_right-join-email"></li>
+            <div class="footer_right-social-icon">
+                <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+                <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+                <a href="#"><ion-icon name="logo-twitter"></ion-icon>
+            </div>
+        </div>
+    </section>
+    </footer>
+</body>
+<script src="jvcripts/main.js"></script>
+<script src="jvcripts/cart.js"></script>
+</html>

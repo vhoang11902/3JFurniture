@@ -1,0 +1,723 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-transform: capitalize;
+    box-sizing: border-box;
+    font-family: 'BaronSans', Helvetica, Arial;
+    font-weight: 400;
+}
+body{
+    position: relative;
+    width: 100%;
+
+}
+a{
+    color: black;
+    text-decoration: none;
+    font-size: 16px;
+}
+ion-icon {
+    font-size: 25px;
+}
+.l_navbar{
+    position: fixed;
+    width: 250px;
+    height: 100%;
+    background: #f1f1f1;
+    display: flex;
+    align-items: start;
+    z-index: 10000000;
+    border-right: 1 solid rgba(0,0,0,0.1);
+    transition: ease-in-out 0.5s;
+    box-shadow: 0 2px 1rem #615e5e;
+    visibility: hidden;
+}
+
+.sub_menu{
+    width: 100%;
+    overflow: hidden;
+}
+.sub_menu > li > a {
+    width: 100%;
+    font-size: 1.2em;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: start;
+    padding: 15px;
+    transition: linear 0.5s;
+}
+.sub_menu > li > a:hover{
+    background-color: #d9d4c8;
+    box-shadow: 5px 5px 5px #666;
+    -moz-box-shadow: 5px 5px 5px #666;
+    -webkit-box-shadow: 5px 5px 5px #666;
+}
+.toggle_navbar_menu{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    padding: 0 0 0 20px;
+    visibility: hidden;
+}
+.toggle_navbar_menu-close ion-icon{
+    font-size: 30px;
+    text-align: center;
+}
+.header{
+    background-color: #f9f7f4;
+}
+.header__navbar{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    z-index: 10000;
+    transition: all 0.5s;
+}
+.header__navbar.sticky{
+    width: 100%;
+    display: flex;
+    position: fixed;
+    justify-content: space-between;
+    z-index: 10000;
+    box-shadow: 0 5px 1rem rgb(208, 204, 199);
+    background-color: #f9f7f4;
+}
+
+.header__navbar-logo a img {
+    width: 80px;
+    position: absolute;
+    left: 60px;
+}
+.header__navbar-search{
+    width: 40%;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    margin-right: 10%;
+    align-items:center;
+}
+.header__navbar-search > input{
+    width: 100%;
+    height: 45px;
+    border: 1px solid #EEEEEE;
+    background-color: #f9f7f4;
+    z-index: 1;
+    position: relative;
+    padding-left: 10px;
+    padding-right: 40px;
+    border-radius: 5px;
+    transition: 0.2s;
+    font-size: 16px;
+}
+.header__navbar-search > input:hover {
+    border: 1px solid #9a9a9a;
+}
+.header__navbar-search-btn{
+    display: flex;
+    right: 0%;
+    position: absolute;
+    z-index: 2;
+    width: 45px;
+    height: 45px;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    border-radius: 5px;
+    border: none;
+}
+.header__navbar-search-btn:hover{
+    background-color: #ccc;
+
+}
+.header__navbar-item{
+    display: flex;
+    align-items:center;
+    justify-content:space-between;
+}
+.header_navbar-item-icon {
+    padding: 0 30px;
+}
+.header_navbar-item-icon:first-child{
+    z-index: 2;
+    position: absolute;
+    right: 35%;
+    visibility: hidden;
+}
+.header_NavigationBar{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    border-bottom: 1px solid #EEEEEE;
+    align-items: center;
+}
+li{
+    list-style: none;
+    position: relative;
+}
+.header_NavigationBar > li > a{
+    font-size: 15px;
+    font-weight: lighter;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+}
+.header_NavigationBar li :hover{
+    border-bottom: 1px solid black;
+}
+
+/* --------------------cart-=---------------------- */
+.cart{
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 360px;
+    min-height: 100vh;
+    padding: 20px;
+    background-color: #d9d4c8;
+    box-shadow: -2px 0 4px hsl(0 4% 15% /10%);
+    transition: ease-in-out 0.5s;
+}
+
+.cart.active{
+    right: 0;
+}
+.cart-lable{
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+.cart-box{
+    display: grid;
+    grid-template-columns: 32% 50% 18%;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+.cart-img{
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    padding: 10px;
+}
+.detail-box{
+    display: grid;
+    row-gap: 0.5rem;
+}
+.cart-pd-lable{
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+.cart-pd-price{
+    font-weight: 600;
+}
+.cart-pd-quanlity{
+    border: 1px solid gainsboro;
+    outline-color: #d9d4c8;
+    width: 2.7rem;
+    text-align: center;
+    font-size: 1rem;
+}
+.total-cart{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 1.5rem;
+    border-top: 1px solid black;
+    margin-bottom: 2rem;
+}
+.total-lable{
+    font-size: 1rem;
+    font-weight: 600;
+}
+.total-cart-price{
+    margin-left: 0.5rem;
+}
+.btn-cart,.btn-close-cart{
+    width: 100%;
+    height: 30px;
+    margin-bottom: 10px;
+    justify-content: center;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+.btn-cart a{
+    padding: 10px 120px;
+}
+.btn-cart:hover{
+    background-color: #d04e4e;
+    color: white;
+}
+.btn-close-cart:hover{
+    background-color: #a5a4a2;
+    color: white;
+}
+.cartegory{
+    margin: 30px 20px;
+}
+.cartegory_filter{
+    width: 100%;
+    display: flex;
+    height: 50px;
+    position: relative;
+    margin-top:2rem;
+}
+.cartegory_filter_btn{
+    width: 100%;
+    height: 40px;
+    max-width: 250px;
+    background: #EEEEEE;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 5px;
+    margin: 10px 10px 10px 0;
+    cursor: pointer;
+}
+.filter_label{
+    padding: 0 10px;
+}
+.filter_label_icon ion-icon{
+    font-size: 20px;
+    display: flex;
+    transition: all 0.5s;
+}
+.cartegory_filter_droplist{
+    width: 100%;
+    max-width: 250px;
+    display: block;
+    position: absolute;
+    top:4rem;
+    background-color: #666;
+    border-radius: 5px;
+}
+.filter_list{
+    width: 100%;
+    max-width: 250px;
+    height: 40px;
+    display: none;
+    position: relative;
+    align-items: center;
+    padding: 0 10px;
+    transition: 0.5s;
+
+}
+.filter_list .checkbox ion-icon{
+    font-size: 15px;
+    transform: scale(0);
+}
+.filter_list .checkbox{
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+.filter_list:hover{
+    background-color: #d9d4c8;
+}
+.cartegory_filter_btn.open .filter_list{
+    display: flex;
+}
+.cartegory_filter_btn.open .filter_label_icon ion-icon{
+    transform: rotate(-180deg);
+}
+.filter_list.checked .checkbox ion-icon{
+    font-size: 15px;
+    transform: scale(1);
+}
+.cartegory-content{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    padding: 10px;
+}
+
+
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-around;
+    align-items: center;
+    background-color: #595e62;
+    padding-bottom: 100px;
+    color: #d9d4c8;
+    padding: 70px 0;
+}
+.footer{
+    display: flex;
+    width: 100%;
+}
+.footer_col{
+    width: 30%;
+    padding: 0 5%;
+}
+.footer_col li a {
+    font-size: 16px;
+    padding-bottom: 10px;
+	text-transform: capitalize;
+	color: #ffffff;
+	font-weight: 300;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer_col li a:hover{
+	color: #ffffff;
+	padding-left: 8px;
+}
+.footer_col h3{
+    margin-bottom: 20px;
+}
+.footer_col input{
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+    padding-left: 10px;
+}
+.footer_col input:hover{
+    border: 1px solid bisque;
+}
+.footer_col a ion-icon{
+    font-size: 40px;
+    padding: 10px 0;
+    display: inline-block;
+	color: #ffffff;
+	transition: all 0.2s ease;
+}
+.footer_col a ion-icon:hover{
+    color:#9a9a9a;
+}
+/* -----------CART--------------------------------------- */
+
+.body_content{
+        background-color: #f9f7f4;
+        padding: 3rem 0;
+}
+.card{
+    padding: 0 76px;
+}
+.top_card{
+    display: grid;
+    grid-template-columns: 70% 30%;
+    align-items: center;
+}
+.lable h1{
+    font-weight: 700;
+    font-size: 35px;
+}
+.card_total{
+    display: grid;
+    height: 55px;
+    align-items: center;
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+    background-color: #dbd8d8;
+    padding: 10px 24px;
+    margin-left:20px;
+}
+.card_total-left span{
+    font-weight: 700;
+    font-size: 20px;
+    text-transform: lowercase;
+}
+.card_total-right{
+    font-size: 15px;
+    font-weight: 500;
+}
+.card_total-right-num{
+    font-weight: 700;
+}
+.card_body{
+    display: grid;
+    grid-template-columns: 70% 30%;
+}
+.card_body-left{
+    margin-right: 10px;
+}
+.card_list{
+    width: 100%;
+    height: 165px;
+    display: grid;
+    grid-template-columns: 20% 70% 10%;
+    border: 1px solid gainsboro;
+    margin: 20px 0;
+}
+.card_list-info{
+    width: 100%;
+    display: block;
+    line-height: 25.6px;
+    padding: 0 15px;
+    line-height: 25.6px;
+    font-weight: 500;
+}
+.card_list-img img{
+    max-width: 169px;
+    height: 149px;
+    padding: 0 15px;
+}
+.card_list-img{
+    max-width: 235px;
+}
+
+.item-name{
+    height: 45px;
+    font-size:14px;
+    padding: 10px 15px;
+}
+.item-name a{
+    font-weight: 550;
+}
+.item-info{
+    padding: 0 15px;
+    height: 22px;
+    font-weight: lighter;
+    font-size: 14px;
+}
+.item-price{
+    width: 100%;
+    height: 44px;
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns:  auto auto auto;
+    align-items:center;
+    padding: 0 15px;
+    margin-bottom: ;
+}
+.price{
+    font-weight: 550;
+    line-height:20.58px;
+}
+.wrapper{
+    width: 100%;
+    display: flex;
+    padding: 0 15px;
+    font-size: 18px;
+    font-weight: 600;
+}
+.wrapper button{
+    width: 44px;
+    height: 44px;
+    margin: 0 10px;
+    background-color: #f4f4f4;
+    border: 1px solid #d8d8d8;
+    border-radius: 5px;
+    transition: all 0.5s;
+}
+.wrapper ion-icon{
+    font-size: 17px;
+}
+.wrapper button:hover{
+    background-color: #dad7d7
+}
+.wrapper span{
+    display: flex;
+    font-size: 17px;
+    width: 44px;
+    height: 44px;
+    align-items: center;
+    justify-content: center;
+    background-color: #f4f4f4;
+    border: 1px solid #d8d8d8;
+    border-radius: 5px;
+}
+.total-price{
+    font-weight: 550;
+    line-height:20.58px;
+}
+.card_list-delbtn{
+    display: flex;
+    margin: 20px 0;
+    border-left: 1px solid gainsboro;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.del-item{
+    width: 44px;
+    height: 44px;
+    padding: 0 15px;
+    font-size: 18px;
+    background-color: #f4f4f4;
+    border: 1px solid #d8d8d8;
+    border-radius: 5px;
+    transition: all 0.5s;
+}
+.card_body-right{
+    margin: 20px 0 20px 20px;
+    padding: 15px;
+    background-color: #dbd8d8;
+}
+.card_body-right h3{
+    letter-spacing:1.75px;
+    line-height:18.08px;
+    margin:0px 0px 16px;
+}
+.sum-price-wrap{
+    line-height: 30px;
+    font-size: 14px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgb(195, 193, 193);
+}
+.sum-price-info{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.sum-price-text{
+    font-weight: 600;
+}
+.total-price{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+    margin-top: 20px;
+}
+.total-price-num{
+    font-size: 20px;
+    font-weight: 600;
+}
+.btn-checkout{
+    width: 100%;
+    display: flex;
+    margin-top: 10px;
+    justify-content: center;
+}
+.btn-checkout button{
+    width: 350px;
+    height: 40px;
+    font-size: 16px;
+    color: white;
+    border: 1px solid gainsboro;
+    background-color: #7b7b7b;
+    border-radius: 10px;
+    transition: all 0.5s;
+}
+.btn-checkout button:hover{
+    background-color: #9a9a9a;
+}
+@media only screen and (max-width: 1050px) {
+    .header_NavigationBar{
+        display: none;
+    }
+    .toggle_navbar_menu{
+        z-index: 20000;
+        visibility: visible;
+    }
+    .header__navbar-logo > img{
+        margin-left: 20px;
+    }
+    .l_navbar{
+        visibility: visible;
+    }
+    .header_navbar-item-icon:first-child{
+        position: relative;
+        right: 0%;
+        visibility: visible;
+    }
+    .header_navbar-item-icon{
+        display: flex;
+        position: relative;
+        flex-wrap: wrap;
+        z-index: 10000;
+        padding: 0 8px;
+    }
+    .header__navbar-search{
+        display: none;
+    }
+    .header__navbar-search > input{
+        background-color:#f1f1f1;
+        border: 1px solid rgba(151, 150, 150, 0.1);
+        
+    }
+    
+    .header__navbar-search.active {
+        width: 100%;
+        position: absolute;
+        display: flex;
+        top:80px;
+        z-index: 10000;
+        visibility: visible;
+        transition: ease-in-out 0.5s;
+    }
+    
+    .header__navbar-logo img{
+        width: 60px;
+        flex-wrap: wrap;
+    }
+    .cartegory-content{
+        margin-top: 30px;
+        display: grid;
+        grid-template-columns: auto auto auto ;
+    }
+
+    .content_product-body{
+        display: block;
+        margin: 0;
+        padding: 0px;
+    }
+    .product_img{
+        width: 100%;
+        max-width: 100%;
+        padding: 0 1rem 1rem 1rem ;
+    }
+    .product_big-img{
+        width: 100%;
+        max-width: 100%;
+    }
+    .product_big-img img{
+        width: 100%;
+    }
+    .menu_des{
+        display: block;
+        position: relative;
+        height: auto;
+        padding: 2rem 0;
+        border: none;
+    }
+    .menu_des li{
+        border-bottom: 1px solid gainsboro;
+    }
+    .product_des-ct{
+        display: none;
+    }
+    .product-category{
+        border: none;
+    }   
+}
+@media only screen and (max-width: 750px) {
+    
+    footer{
+        display: block;
+        padding-top: 10px;
+    }
+    .footer{
+        display: block;
+    }
+    .footer_col{
+        width: 100%;
+        text-align: center;
+        align-items: center;
+    }
+    .footer_col h3{
+        margin-top: 20px;
+    }
+    .footer_col li a{
+        width: 100%;
+        padding: 5px 0px;
+    }
+    .footer_col input{
+        width: 60%;
+    }
+    .cartegory-content{
+        display: grid;
+        grid-template-columns: auto auto ;
+    }
+    ion-icon{
+        font-size: 20px;
+    }
+}

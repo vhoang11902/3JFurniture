@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/checkout.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
+    <title>Triple J Furniture</title>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.rawgit.com/igorlino/elevatezoom-plus/1.1.6/src/jquery.ez-plus.js"></script>    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.rawgit.com/igorlino/elevatezoom-plus/1.1.6/src/jquery.ez-plus.js"></script>
+</head>
+<body>
+    <!-- --------------------------Header-->
+    <nav class="l_navbar" id="l_navbar">
+        <ul class="sub_menu">
+            <li class="toggle_navbar_menu-close">
+                <a class="toggle_navbar_menu-close" onclick="closeLMenu()">
+                    <ion-icon name="close-outline"></ion-icon>
+                </a>
+            </li>
+            <li><a href="">Outdoor Daybeds</a></li>
+            <li><a href="">Outdoor Daybeds</a></li>
+            <li><a href="">Outdoor Daybeds</a></li>
+            <li><a href="">Outdoor Daybeds</a></li>
+        </ul>
+    </nav>
+    <section class="header">
+        <nav class="header__navbar">
+            <div class="toggle_navbar_menu">
+                <a class="toggle_navbar_menu_button" onclick="openLMenu()">
+                    <ion-icon name="menu"></ion-icon>
+                </a>
+            </div>
+            <div class="header__navbar-logo">
+                <a href="index.html"><img src="img/logo2.png"></a>
+            </div>
+            
+            <div class="header__navbar-search">
+                <input placeholder="SEARCH" type="header_navbar-search-text">
+                <button class="header__navbar-search-btn">
+                    <ion-icon name="search-outline"></ion-icon>
+                </button>
+            </div>
+            <div class="header__navbar-item">
+                <a  class="header_navbar-item-icon" onclick="openSearch()">
+                    <ion-icon class="icon-search" name="search-outline"></ion-icon>
+                </a>
+                <a class="header_navbar-item-icon" id="cart-icon">
+                    <ion-icon name="bag-handle-outline" ></ion-icon>
+                </a>
+                <a href="" class="header_navbar-item-icon">
+                    <ion-icon name="person-outline"></ion-icon>
+                </a>
+                <a href="" class="header_navbar-item-icon">
+                    <ion-icon name="call-outline"></ion-icon>
+                </a>
+                <div class="cart">
+                    <h2 class="cart-lable">Your Cart</h2>
+                    <div class="cart-content">
+
+                    </div>
+                    <div class="total-cart">
+                        <div class="total-lable">Total:</div>
+                        <div class="total-cart-price">$0</div>
+                    </div>
+                    <button type="button" class="btn-cart"><a href="cart.html">Buy Now</a></button>
+                    <button type="button" class="btn-close-cart" id="close-cart">Keep Shopping</button>
+                </div>
+                
+            </div> 
+        </nav>
+        <nav class="header_NavigationBar">
+            <li><a href="product.html">Outdoor Daybeds</a></li>
+            <li><a href="">Outdoor Daybeds</a></li>
+            <li><a href="">Outdoor Daybeds</a></li>
+            <li><a href="">Outdoor Daybeds</a></li>
+            <li><a href="">Outdoor Daybeds</a></li>
+            <li><a href="">Outdoor Daybeds</a></li>
+        </nav>
+        </section>
+
+<!-- --------------------------CHECKOUT -->
+    <section class="body">
+        <div class="body_top">
+            <div class="top_lable">
+                <h1>Secure Checkout</h1>
+                <h2>My Details</h2>
+            </div>
+            <div class="top_info">
+                <div class="top_info-left">
+                    <span>2 iterms</span>
+                </div>
+                <div class="top_info-right">
+                    <div class="top_info-right-label">Order total</div>
+                    <div class="top_info-right-num">$7998</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="body_content">
+            <div class="body_content-left">
+                <div class="bill_detail-lable">
+                    <h2>1. DELIVERY</h2>
+                </div>
+                <div class="bill-container-wrap">
+                    <div class="bill-container">
+                        <div class="container-item">
+                            <label for="">First Name:</label>
+                            <input type="text">
+                        </div>
+                    </div>
+                    <div class="bill-container">
+                        <div class="container-item">
+                            <label for="">Last name:</label>
+                            <input type="text">
+                        </div>
+                    </div>
+                    <div class="bill-container">
+                        <div class="container-item">
+                            <label for="">State:</label>
+                            <input type="text">
+                        </div>
+                    </div>
+                    <div class="bill-container">
+                        <div class="container-item">
+                            <label for="">City:</label>
+                            <input type="text">
+                        </div>
+                    </div>
+                    <div class="bill-container">
+                        <div class="container-item">
+                            <label for="">Address:</label>
+                            <input type="text">
+                        </div>
+                    </div>
+                    <div class="bill-container">
+                        <div class="container-item">
+                            <label for="">Postal Code:</label>
+                            <input type="text">
+                        </div>
+                    </div>
+                    <div class="bill-container">
+                        <div class="container-item">
+                            <label for="">Email:</label>
+                            <input type="text">
+                        </div>
+                    </div>
+                    <div class="bill-container">
+                        <div class="container-item">
+                            <label for="">Phone Number:</label>
+                            <input type="text">
+                        </div>
+                    </div>
+                </div>
+                <div class="payment-lable">
+                    <h2>2.PAYMENT</h2>
+                </div>
+                <div class="payment-form">
+                    <div class="payment-method">
+                        <button class="method selected">
+                            <ion-icon name="card"></ion-icon>
+
+                            <span>Credit/Debit Card</span>
+
+                            <ion-icon class="checkmark fill" name="checkmark-circle"></ion-icon>
+                        </button>
+                        <button class="method">
+                            <ion-icon name="logo-paypal"></ion-icon>
+
+                            <span>Paypal</span>
+
+                            <ion-icon class="checkmark" name="checkmark-circle-outline"></ion-icon>
+                        </button>
+                    </div>
+                    <form action="#">
+                        <div class="card-container">
+                            <label for="card-number" class="label-default">Card number</label>
+                            <input type="number" name="card-number" id="card-number" class="input-default">
+                        </div>
+                        <div class="card-container">
+                            <label for="cardholder-name" class="label-default">Cardholder name</label>
+                            <input type="text" name="cardholder-name" id="cardholder-name" class="input-default">
+                        </div>
+                        <div class="card-container">
+                            <div class="expire-date">
+                                <label for="expire-date" class="label-default">Expiration date</label>
+                
+                                <div class="input-flex">
+                
+                                    <input type="number" name="day" id="expire-date" placeholder="31" min="1" max="31"
+                                    class="input-default">
+                                    /
+                                    <input type="number" name="month" id="expire-date" placeholder="12" min="1" max="12"
+                                    class="input-default">
+                
+                                </div>
+                            </div>
+                            <div class="cvv">
+                                <label for="cvv" class="label-default">CVV</label>
+                                <input type="number" name="cvv" id="cvv" class="input-default">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div class="card_body-right">
+                <h3>ORDER SUMMARY</h3>
+                <div class="sum-price-wrap">
+                    <div class="sum-price-info">
+                        <div class="sum-price-lable">
+                            Product total
+                        </div>
+                        <div class="sum-price-text">
+                            $11997
+                        </div>
+                    </div>
+                    <div class="sum-price-info">
+                        <div class="sum-price-lable">
+                            shipping fee
+                        </div>
+                        <div class="sum-price-text">
+                            free
+                        </div>
+                    </div>
+                </div>
+                <div class="total-price">
+                    <div class="total-price-lable">
+                        Total
+                    </div>
+                    <div class="total-price-num">
+                        $12126
+                    </div>
+                </div>
+                <div class="btn-checkout">
+                    <button class="checkout">
+                        CHECKOUT
+                    </button>
+                </div>
+            </div>
+
+            <button class="btn btn-primary">
+                <b>Pay</b> $ <span id="payAmount">2.15</span>
+            </button>
+        </div>
+    </section>
+<!-- --------------------------Footer -->
+<footer>
+    <section class="footer">
+        <div class="footer_col">
+            <li><h3>GET HELP</h3></li>
+            <li><a href="#">Delivery Information</a></li>
+            <li><a href="#">Product Care</a></li>
+            <li><a href="#">Help Centre</a></li>
+        </div>
+        <div class="footer_col">
+            <li><h3>INFORMATION</h3></li>
+            <li><a href="#">Our Story</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">As Seen In</a></li>
+        </div>
+        <div class="footer_col">
+            <li><h3>SUBSCRIBE TO NEWSLETTERS</h3></li>
+            <li><input placeholder="Your email" type="footer_right-join-email"></li>
+            <div class="footer_right-social-icon">
+                <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+                <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+                <a href="#"><ion-icon name="logo-twitter"></ion-icon>
+            </div>
+        </div>
+    </section>
+    </footer>
+</body>
+<script src="jvcripts/main.js"></script>
+<script src="jvcripts/product.js"></script>
+<script src="jvcripts/cart.js"></script>
+</html>
