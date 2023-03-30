@@ -498,14 +498,13 @@ footer{
 .product_related {
     position: relative;
     overflow: hidden;
-    padding: 30px;
+    padding: 10px;
 }
 
 .product-category {
     font-size: 30px;
     font-weight: 600;
-    margin-bottom: 30px;
-    padding-top: 30px;
+    padding: 20px 0;
     text-transform: capitalize;
     align-items: center;
     text-align: center;
