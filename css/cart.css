@@ -377,7 +377,6 @@ footer{
     grid-template-columns:  auto auto auto;
     align-items:center;
     padding: 0 15px;
-    margin-bottom: ;
 }
 .price{
     font-weight: 550;
@@ -436,6 +435,7 @@ footer{
     height: 34px;
     padding: 0 10px;
     font-size: 14px;
+    color: black;
     background-color: #f4f4f4;
     border: 1px solid #d8d8d8;
     border-radius: 5px;
@@ -485,11 +485,13 @@ footer{
     width: 350px;
     height: 40px;
     font-size: 16px;
-    color: white;
     border: 1px solid gainsboro;
     background-color: #7b7b7b;
     border-radius: 10px;
     transition: all 0.5s;
+}
+.checkout a{
+    color: white;
 }
 .btn-checkout button:hover{
     background-color: #9a9a9a;
@@ -605,7 +607,7 @@ footer{
 }
 @media only screen and (max-width: 750px) {
     .body_content{
-        padding: 1rem 3rem ;
+        padding: 1rem 1rem ;
     }
     .card_body{
         display: flex;
