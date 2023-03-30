@@ -85,3 +85,12 @@ window.addEventListener("load", () => {
     });
   });
   
+
+//   img------//
+const bigImg = document.querySelector(".product_big-img img")
+const smalImg =  document.querySelectorAll(".product_small-img img")
+smalImg.forEach(function(imgItem,X){
+    imgItem.addEventListener("click",function(){
+    bigImg.src = imgItem.src
+    })
+})
