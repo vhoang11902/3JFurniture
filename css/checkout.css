@@ -327,58 +327,46 @@ footer{
 
 /* -----------TOP CHECKOUT LABLE--------------------------------------- */
 
-
-
-.body{
-    padding: 3rem;
-    background-color: #f9f7f4;
-}
-.body_top{
-    display: grid;
-    grid-template-columns: 70% 30%;
-    align-items: center;
-    padding-bottom: 2rem;
-    gap:1rem;
-}
-.top_lable h1{
-    font-size: 22px;
-    font-weight: 600;
-}
-.top_lable h2{
-    font-size: 35px;
-    font-weight: 600;
-}
-.top_info{
-    display: grid;
-    height: 55px;
-    align-items: center;
-    grid-template-columns: auto auto;
-    justify-content: space-between;
-    background-color: #dbd8d8;
-    padding: 10px 24px;
-    margin-left:20px;
-}
-.top_info-left span{
-    font-weight: 700;
-    font-size: 20px;
-    text-transform: lowercase;
-}
-.top_info-right{
-    font-size: 15px;
-    font-weight: 500;
-}
-.top_info-right-num{
-    font-weight: 700;
-}
 /* -----------BODY CHECKOUT LABLE--------------------------------------- */
+.body{
+    padding: 3rem 10rem;
+    background-color: #f9f7f4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.body h1{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 2rem;
+    font-size: 25px;
+}
 .body_content{
     display: grid;
     grid-template-columns: 70% 30%;
     grid-template-rows: auto auto;
     gap:1rem;
 }
+/* ---------top lable--------------- */
+.top_lable{
+    padding: 10px 0px;
+}
+
+/* ---------top info--------------- */
+.top_info{
+    display: grid;
+    align-items: center;
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+    padding: 10px 24px;
+}
+.top_info-left h2{
+    font-size: 24px;
+}
+/* ---------body--------------- */
+
 .body_content-left{
-    border: 1px solid black;
+    border: 1px solid rgb(195, 193, 193);
 }
 .bill_detail-lable{
     background-color: black;
@@ -510,7 +498,7 @@ input[type=number]::-webkit-inner-spin-button {
 }
 
 .btn { 
-    margin-top: 2rem;
+    margin: 1rem 0;
     width: 300px;
     border-radius: 5px; 
 }
@@ -536,14 +524,8 @@ input[type=number]::-webkit-inner-spin-button {
 .payment-method .method .fill { color: var(--azure); }
 /* -----------checkout-right-info--------------------------------------- */
 .card_body-right{
-    margin: 0px 0 0px 20px;
+    margin: 0px 0 0px 10px;
     padding: 15px;
-    background-color: #dbd8d8;
-}
-.card_body-right h3{
-    letter-spacing:1.75px;
-    line-height:18.08px;
-    margin:0px 0px 16px;
 }
 .sum-price-wrap{
     line-height: 30px;
@@ -570,26 +552,6 @@ input[type=number]::-webkit-inner-spin-button {
     font-size: 20px;
     font-weight: 600;
 }
-.btn-checkout{
-    width: 100%;
-    display: flex;
-    margin-top: 10px;
-    justify-content: center;
-}
-.btn-checkout button{
-    width: 350px;
-    height: 40px;
-    font-size: 16px;
-    color: white;
-    border: 1px solid gainsboro;
-    background-color: #7b7b7b;
-    border-radius: 10px;
-    transition: all 0.5s;
-}
-.btn-checkout button:hover{
-    background-color: #9a9a9a;
-}
-
 /* -----------RESPONSIVE--------------------------------------- */
 @media only screen and (max-width: 1050px) {
     .header_NavigationBar{
@@ -640,48 +602,80 @@ input[type=number]::-webkit-inner-spin-button {
         width: 60px;
         flex-wrap: wrap;
     }
-    .cartegory-content{
-        margin-top: 30px;
+    /* ----------------------body------------------ */
+    .body{
+        padding: 0rem 3rem;
+        background-color: #f9f7f4;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .body h1{
+        margin-top: 3rem;
+    }
+    .body_content{
         display: grid;
-        grid-template-columns: auto auto auto ;
+        grid-template-areas: 
+        'top top top'
+        'body body body';
+        gap: 0;
+    }
+    .card_body-right{
+        padding: 0;
+    }
+    .content-right{ 
+        grid-area: top;
+        gap: 0;
+        padding-bottom: 2rem;
+        border-bottom: 1px solid rgb(195, 193, 193);
+    }
+    .top_info{
+        padding: 0;
+    }
+    .content-left{ 
+        grid-area: body;
+        gap: 0;
+    }
+    .top_lable h2{
+        padding-bottom: 1rem;
+    }
+    .top_info{
+        margin: 1rem 0;
+    }
+    .card_body-right{
+        margin: 0;
     }
 
-    .content_product-body{
-        display: block;
-        margin: 0;
-        padding: 0px;
-    }
-    .product_img{
-        width: 100%;
-        max-width: 100%;
-        padding: 0 1rem 1rem 1rem ;
-    }
-    .product_big-img{
-        width: 100%;
-        max-width: 100%;
-    }
-    .product_big-img img{
-        width: 100%;
-    }
-    .menu_des{
-        display: block;
-        position: relative;
-        height: auto;
-        padding: 2rem 0;
-        border: none;
-    }
-    .menu_des li{
-        border-bottom: 1px solid gainsboro;
-    }
-    .product_des-ct{
-        display: none;
-    }
-    .product-category{
-        border: none;
-    }   
 }
-@media only screen and (max-width: 750px) {
-    
+@media only screen and (max-width: 650px) {
+    /* ----------------------body------------------ */
+    .body{
+        width: 100%;
+        padding: 0rem 1rem;
+        background-color: #f9f7f4;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .bill-container-wrap{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 5px;
+    }
+    .payment-method{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .payment-method .method {width: 100%;}
+    .card-container:last-child{
+        display: grid;
+        grid-template-columns: 70% 30%;
+        width: 100%;
+    }
+    /* foooter */
     footer{
         display: block;
         padding-top: 10px;

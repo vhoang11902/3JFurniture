@@ -257,85 +257,7 @@ li{
     background-color: #a5a4a2;
     color: white;
 }
-.cartegory{
-    margin: 30px 20px;
-}
-.cartegory_filter{
-    width: 100%;
-    display: flex;
-    height: 50px;
-    position: relative;
-    margin-top:2rem;
-}
-.cartegory_filter_btn{
-    width: 100%;
-    height: 40px;
-    max-width: 250px;
-    background: #EEEEEE;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    border-radius: 5px;
-    margin: 10px 10px 10px 0;
-    cursor: pointer;
-}
-.filter_label{
-    padding: 0 10px;
-}
-.filter_label_icon ion-icon{
-    font-size: 20px;
-    display: flex;
-    transition: all 0.5s;
-}
-.cartegory_filter_droplist{
-    width: 100%;
-    max-width: 250px;
-    display: block;
-    position: absolute;
-    top:4rem;
-    background-color: #666;
-    border-radius: 5px;
-}
-.filter_list{
-    width: 100%;
-    max-width: 250px;
-    height: 40px;
-    display: none;
-    position: relative;
-    align-items: center;
-    padding: 0 10px;
-    transition: 0.5s;
-
-}
-.filter_list .checkbox ion-icon{
-    font-size: 15px;
-    transform: scale(0);
-}
-.filter_list .checkbox{
-    border: 1px solid black;
-    border-radius: 5px;
-    margin-right: 10px;
-}
-.filter_list:hover{
-    background-color: #d9d4c8;
-}
-.cartegory_filter_btn.open .filter_list{
-    display: flex;
-}
-.cartegory_filter_btn.open .filter_label_icon ion-icon{
-    transform: rotate(-180deg);
-}
-.filter_list.checked .checkbox ion-icon{
-    font-size: 15px;
-    transform: scale(1);
-}
-.cartegory-content{
-    display: grid;
-    grid-template-columns: auto auto auto auto;
-    padding: 10px;
-}
-
-
+/* ------------------------------ foooterrr------------------------------- */
 footer{
     display: flex;
     flex-wrap: wrap;
@@ -395,41 +317,11 @@ footer{
 
 .body_content{
         background-color: #f9f7f4;
-        padding: 3rem 0;
-}
-.card{
-    padding: 0 76px;
-}
-.top_card{
-    display: grid;
-    grid-template-columns: 70% 30%;
-    align-items: center;
+        padding: 1rem 10rem ;
 }
 .lable h1{
     font-weight: 700;
     font-size: 35px;
-}
-.card_total{
-    display: grid;
-    height: 55px;
-    align-items: center;
-    grid-template-columns: auto auto;
-    justify-content: space-between;
-    background-color: #dbd8d8;
-    padding: 10px 24px;
-    margin-left:20px;
-}
-.card_total-left span{
-    font-weight: 700;
-    font-size: 20px;
-    text-transform: lowercase;
-}
-.card_total-right{
-    font-size: 15px;
-    font-weight: 500;
-}
-.card_total-right-num{
-    font-weight: 700;
 }
 .card_body{
     display: grid;
@@ -442,8 +334,8 @@ footer{
     width: 100%;
     height: 165px;
     display: grid;
-    grid-template-columns: 20% 70% 10%;
-    border: 1px solid gainsboro;
+    grid-template-columns: 30% 60% 10%;
+    border: 1px solid rgb(195, 193, 193) ;
     margin: 20px 0;
 }
 .card_list-info{
@@ -499,8 +391,8 @@ footer{
     font-weight: 600;
 }
 .wrapper button{
-    width: 44px;
-    height: 44px;
+    width: 34px;
+    height: 34px;
     margin: 0 10px;
     background-color: #f4f4f4;
     border: 1px solid #d8d8d8;
@@ -516,8 +408,8 @@ footer{
 .wrapper span{
     display: flex;
     font-size: 17px;
-    width: 44px;
-    height: 44px;
+    width: 34px;
+    height: 34px;
     align-items: center;
     justify-content: center;
     background-color: #f4f4f4;
@@ -537,10 +429,10 @@ footer{
     justify-content: center;
 }
 .del-item{
-    width: 44px;
-    height: 44px;
-    padding: 0 15px;
-    font-size: 18px;
+    width: 34px;
+    height: 34px;
+    padding: 0 10px;
+    font-size: 14px;
     background-color: #f4f4f4;
     border: 1px solid #d8d8d8;
     border-radius: 5px;
@@ -549,7 +441,6 @@ footer{
 .card_body-right{
     margin: 20px 0 20px 20px;
     padding: 15px;
-    background-color: #dbd8d8;
 }
 .card_body-right h3{
     letter-spacing:1.75px;
@@ -649,48 +540,121 @@ footer{
         width: 60px;
         flex-wrap: wrap;
     }
-    .cartegory-content{
-        margin-top: 30px;
+
+    /* --------body---------- */
+    .body_content{
+        padding: 1rem 10rem ;
+    }
+    .card_body{
+        display: flex;
+        flex-direction: column;
+    }
+    .card_list{
+        width: 100%;
+        height: 150px;
         display: grid;
-        grid-template-columns: auto auto auto ;
+        grid-template-columns: 30% 60% 10%;
+
+    }
+    .card_list-info{
+        padding: 0;
+    }
+    .card_body-left{
+        margin-right: 0px;
+    }
+    .card_list-img img{
+        max-width: 120px;
+        height: 110px;
+        padding: 0 10px;
+    }
+    .wrapper{
+        width: 100%;
+        display: flex;
+        padding: 0 px;
+        font-size: 18px;
+        font-weight: 600;
+    }
+    .wrapper button{
+        width: 34px;
+        height: 34px;
+        margin: 0 5px;
+    }
+    .wrapper ion-icon{
+        font-size: 14px;
+    }
+    .wrapper span{
+        font-size: 14px;
+        width: 34px;
+        height: 34px;
+    }
+    .del-item{
+        width: 34px;
+        height: 34px;
+        padding: 0 5px;
+        font-size: 14px;
     }
 
-    .content_product-body{
-        display: block;
-        margin: 0;
-        padding: 0px;
-    }
-    .product_img{
-        width: 100%;
-        max-width: 100%;
-        padding: 0 1rem 1rem 1rem ;
-    }
-    .product_big-img{
-        width: 100%;
-        max-width: 100%;
-    }
-    .product_big-img img{
-        width: 100%;
-    }
-    .menu_des{
-        display: block;
-        position: relative;
-        height: auto;
+    .card_body-right{
+        margin: 1rem 0;
         padding: 2rem 0;
-        border: none;
+        border-top: 1px solid rgb(195, 193, 193);
     }
-    .menu_des li{
-        border-bottom: 1px solid gainsboro;
-    }
-    .product_des-ct{
-        display: none;
-    }
-    .product-category{
-        border: none;
-    }   
 }
 @media only screen and (max-width: 750px) {
-    
+    .body_content{
+        padding: 1rem 3rem ;
+    }
+    .card_body{
+        display: flex;
+        flex-direction: column;
+    }
+    .card_list{
+        width: 100%;
+        height: 150px;
+        display: grid;
+        grid-template-columns: 30% 60% 10%;
+        border: 1px solid gainsboro;
+        margin: 20px 0;
+    }
+    .card_list-info{
+        padding: 0;
+    }
+    .card_list-img img{
+        max-width: 120px;
+        height: 110px;
+        padding: 0 10px;
+    }
+    .wrapper{
+        width: 100%;
+        display: flex;
+        padding: 0 px;
+        font-size: 18px;
+        font-weight: 600;
+    }
+    .wrapper button{
+        width: 24px;
+        height: 24px;
+        margin: 0 5px;
+    }
+    .wrapper ion-icon{
+        font-size: 14px;
+    }
+    .wrapper span{
+        font-size: 14px;
+        width: 24px;
+        height: 24px;
+    }
+    .card_list-delbtn{
+        padding: 0 10px;
+    }
+    .del-item{
+        width: 34px;
+        height: 24px;
+        padding: 0 5px;
+        font-size: 14px;
+    }
+
+    /* footer */
     footer{
         display: block;
         padding-top: 10px;
