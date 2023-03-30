@@ -28,7 +28,7 @@ ion-icon {
 
 .l_navbar{
     position: fixed;
-    width: 250px;
+    width: 0px;
     height: 100%;
     background: #f1f1f1;
     display: flex;
@@ -155,6 +155,7 @@ ion-icon {
     padding: 0 0 0 20px;
     visibility: hidden;
 }
+
 .toggle_navbar_menu-close ion-icon{
     font-size: 30px;
     text-align: center;
