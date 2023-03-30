@@ -342,12 +342,13 @@ footer{
 }
 /* -----------PRODUCT IMG--------------------------------------- */
 .product_img{
-    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 .product_big-img img {
     width: 90%;
     height: 400px;
-    padding-right: 20px;
 }
 .product_small-img{
     display: grid;
@@ -357,7 +358,7 @@ footer{
 }
 .product_small-img img{
     width: 100%;
-    height: 70px;
+    height: 60px;
     cursor: pointer;
     padding-right: 5px;
 }
