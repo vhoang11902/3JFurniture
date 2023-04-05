@@ -16,7 +16,7 @@ function imgSlide (){
     slider (index)
 }
 function slider(index){
-    imgContainer.style.left = "-" + index*100 + "%"
+    imgContainer.style.left = "-" + index*100 + "%";
     const dotActive = document.querySelector('.active')
     dotActive.classList.remove("active")
     dotItem[index].classList.add("active")
@@ -34,27 +34,11 @@ window.addEventListener("scroll",function(){
     header.classList.toggle("sticky",window.scrollY > 0); 
 })
 
-function openLMenu(){
-    document.getElementById("l_navbar").style.width = "250px"
-}
-function closeLMenu(){
-    document.getElementById("l_navbar").style.width = "0px"
-}
-
 const search = document.querySelector('.header__navbar-search')
 const toggle_search = document.querySelector('.icon-search')
 toggle_search.onclick = function(){
     search.classList.toggle('active');
 }
-
-
-function openSearch(){
-    document.getElementById(".header__navbar-search").toggle.onclick;
-}
-function closeSearch(){
-    document.getElementById("l_navbar").toggle.onclick;
-}
-
 
 // filter drop down---------------//
 
@@ -65,6 +49,17 @@ var a_parent =  document.querySelectorAll(".cartegory_filter_btn");
             aitem.classList.toggle('active');
         }
 })
+let menuIcon = document.querySelector(".toggle_navbar_menu");
+let menu = document.querySelector(".l_navbar");
+let closeMenu = document.querySelector(".toggle_navbar_menu-close");
+
+menuIcon.onclick =() =>{
+    menu.classList.add("active");
+}
+
+closeMenu.onclick =() =>{
+    menu.classList.remove("active");
+}
 const items = document.querySelectorAll(".filter_list");
 items.forEach( items => {
     items.addEventListener("click", () => {

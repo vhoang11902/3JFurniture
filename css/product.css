@@ -448,12 +448,19 @@ footer{
 
 .form-select{
     border: none;
+    color: black;
     width: 62%;
     height: 40px;
     border-radius: 5px;
     background-color: #e2e0dc;
     margin: 1rem 0;
     cursor: pointer;
+}
+.btn:focus {
+    color: black;
+    background: #f9f9f9;
+    outline: 2px solid gainsboro;
+    outline-offset: 2px;
 }
 
 /* -----------PRODUCT DESCRIPTION--------------------------------------- */
