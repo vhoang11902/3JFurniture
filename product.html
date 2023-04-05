@@ -113,10 +113,12 @@
                     <p>100$</p>
                 </div>
                 <div class="product_content-timber">
-                    <p><span style="font-weight:  lighter;">Select Timber:</span></p>
-                    <div class="product-content-timber-img">
-                        <img src="https://media.restorationhardware.com/is/image/rhis/Swatch_OD_Teak_WeatheredGrey_O?$sw_hvr$" alt="">
-                    </div>
+                    <select class="form-select" aria-label="Default select example">
+                        <option selected>Select Timber:</option>
+                        <option value="1">tick</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                    </select>
                 </div>
                 <div class="product-content_pd-size">
                     <p style="font-weight: lighter;">Select Size: </p>
@@ -133,41 +135,82 @@
                     </div>
                     <button onclick="alert('Add to Bag success!!!')"><p>Add To Cart</p></button>
                 </div>
-                
-            </div>
-        </article>
-        <article class="content_product_des">
-            <div class="product_des">
-                <ul class="menu_des">
-                    <li class="des_text-btn"><a>DESCRIPTION + KEY FEATURES</a></li>
-                    <li class="des_text-btn" id="btn_1" ><a>CARE & WARRANTY</a></li>
-                    <li class="des_text-btn"><a>DELIVERY</a></li>
-                </ul>
-                <div class="product_des-ct">
-                    <div class="product_des-ct-text" >
-                        <h3>DESCRIPTION</h3>
-                        <span>
-                            Create an outdoor living space that reflects laidback elegance and cosy comfort with 
-                            the Cannes sofa package that includes one Cannes sofa, 2 Cannes sofa chairs and one 
-                            Cannes coffee table. The armless design of the chairs and sofa offer ample freedom 
-                            to set up different seating configurations depending on the space available and your 
-                            comfort. Crafted from robust acacia timber, the sofa set is designed to last for years. 
-                            The coffee table has a slatted top while the sofas and chairs have high backs with slats.
-                            Layered with plush cushions filled with foam and fibre, the sofas offer a comfy spot to 
-                            lounge and relax. Summer entertaining just got easier.
-                        </span>
+
+                <div class="accordion">
+                    <div class="accordion-item">
+                        <div class="accordion-item-header">
+                            DESCRIPTION + DIMENSIONS
+                        </div>
+                    <div class="accordion-item-body">
+                        <div class="accordion-item-body-content">
+                            <h1>DESCRIPTION:</h1>
+                            <span>Tempt your family to relax and spend more time outdoors by setting up a casual and comfy outdoor living space with the Zanzibar modular sofa. This sofa package includes two modular 3-seater sofas and one corner sofa. Stylish rope woven around an aluminium frame and the curved design accentuate the timeless elegance and strength of this outdoor sofa. The aluminium frame is powder coated for extra protection from the elements. Topped with removable cushions upholstered in easy-care polyester, the sofas are absolutely comfortable. Create different arrangements with the three pieces to fit the space and match your seating needs. Add a matching coffee table to complete the look.</span>
+                            <h1>DIMENSIONS:</h1>
+                            <p>- 1 Seater: 81cm x D77cm x H76cm</p><p>- Coffee Table: L75cm x W75cm x H40cm</p>
+                        </div>
                     </div>
-                    <div class="product_des-ct-text"">
-                        <h3>CARE & WARRENTY</h3>
-                        <span>
-                            Do not leave furniture uncovered in direct sunlight for extended period of time
-                            We recommend removing cushions from furniture and keeping undercover when not in use
-                            We recommend freedom's Outdoor Timber Care Kit to maintain and effectively remove grime and build up.
-                        </span>
+                    </div>
+                    <div class="accordion-item">
+                        <div class="accordion-item-header">
+                            WARRANTY & CARE 
+                        </div>
+                        <div class="accordion-item-body">
+                            <div class="accordion-item-body-content">
+                                <h1>DESCRIPTION:</h1>
+                                <span>Tempt your family to relax and spend more time outdoors by setting up a casual and comfy outdoor living space with the Zanzibar modular sofa. This sofa package includes two modular 3-seater sofas and one corner sofa. Stylish rope woven around an aluminium frame and the curved design accentuate the timeless elegance and strength of this outdoor sofa. The aluminium frame is powder coated for extra protection from the elements. Topped with removable cushions upholstered in easy-care polyester, the sofas are absolutely comfortable. Create different arrangements with the three pieces to fit the space and match your seating needs. Add a matching coffee table to complete the look.</span>
+                                <h1>DIMENSIONS:</h1>
+                                <p>- 1 Seater: 81cm x D77cm x H76cm</p><p>- Coffee Table: L75cm x W75cm x H40cm</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <div class="accordion-item-header">
+                        DELIVERY
+                        </div>
+                        <div class="accordion-item-body">
+                            <div class="accordion-item-body-content">
+                                <h1>DESCRIPTION:</h1>
+                                <span>Tempt your family to relax and spend more time outdoors by setting up a casual and comfy outdoor living space with the Zanzibar modular sofa. This sofa package includes two modular 3-seater sofas and one corner sofa. Stylish rope woven around an aluminium frame and the curved design accentuate the timeless elegance and strength of this outdoor sofa. The aluminium frame is powder coated for extra protection from the elements. Topped with removable cushions upholstered in easy-care polyester, the sofas are absolutely comfortable. Create different arrangements with the three pieces to fit the space and match your seating needs. Add a matching coffee table to complete the look.</span>
+                                <h1>DIMENSIONS:</h1>
+                                <p>- 1 Seater: 81cm x D77cm x H76cm</p><p>- Coffee Table: L75cm x W75cm x H40cm</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
+                <!-- <div class="product_des">
+                    <ul class="menu_des">
+                        <li class="des_text-btn"><a>DESCRIPTION + KEY FEATURES</a></li>
+                        <li class="des_text-btn" id="btn_1" ><a>CARE & WARRANTY</a></li>
+                        <li class="des_text-btn"><a>DELIVERY</a></li>
+                    </ul>
+                    <div class="product_des-ct">
+                        <div class="product_des-ct-text" >
+                            <h3>DESCRIPTION</h3>
+                            <span>
+                                Create an outdoor living space that reflects laidback elegance and cosy comfort with 
+                                the Cannes sofa package that includes one Cannes sofa, 2 Cannes sofa chairs and one 
+                                Cannes coffee table. The armless design of the chairs and sofa offer ample freedom 
+                                to set up different seating configurations depending on the space available and your 
+                                comfort. Crafted from robust acacia timber, the sofa set is designed to last for years. 
+                                The coffee table has a slatted top while the sofas and chairs have high backs with slats.
+                                Layered with plush cushions filled with foam and fibre, the sofas offer a comfy spot to 
+                                lounge and relax. Summer entertaining just got easier.
+                            </span>
+                        </div>
+                        <div class="product_des-ct-text"">
+                            <h3>CARE & WARRENTY</h3>
+                            <span>
+                                Do not leave furniture uncovered in direct sunlight for extended period of time
+                                We recommend removing cushions from furniture and keeping undercover when not in use
+                                We recommend freedom's Outdoor Timber Care Kit to maintain and effectively remove grime and build up.
+                            </span>
+                        </div>
+                    </div>
+                </div> -->
             </div>
+            
         </article>
+
         <article class="product_related">
                 <h2 class="product-category">product related</h2>
                 <button class="pre-btn"><img src="images/arrow.png" alt=""></button>
