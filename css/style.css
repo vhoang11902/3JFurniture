@@ -34,7 +34,7 @@ ion-icon {
     display: flex;
     align-items: start;
     z-index: 10000000;
-    border-right: 1 solid rgba(0,0,0,0.1);
+    border-right: 1px solid rgba(0,0,0,0.1);
     transition: ease-in-out 0.5s;
     box-shadow: 0 2px 1rem #615e5e;
 }
@@ -166,8 +166,9 @@ ion-icon {
 }
 .header__navbar{
     width: 100%;
-    height: 80px;
+    height: 150px;
     display: flex;
+    flex-wrap: wrap;
     position: relative;
     justify-content: space-between;
     z-index: 10000;
@@ -182,22 +183,25 @@ ion-icon {
     box-shadow: 0 5px 1rem rgb(208, 204, 199);
     background-color: #f9f7f4;
 }
-
 .header__navbar-logo a img {
-    width: 80px;
+    display: flex;
+    align-items: center;
+    top:15%;
+    width: 170px;
     position: absolute;
     left: 60px;
 }
 .header__navbar-search{
-    width: 40%;
+    max-width: 100%;
     display: flex;
-    position: relative;
     justify-content: center;
+    left: 100px;
+    position: relative;
     margin-right: 10%;
     align-items:center;
 }
 .header__navbar-search > input{
-    width: 100%;
+    width: 500px;
     height: 45px;
     border: 1px solid #EEEEEE;
     background-color: #f9f7f4;
@@ -285,7 +289,7 @@ li{
     position: relative;
     padding-top: 50%;
     transition: 0.3s;
-    
+
 }
 .aspect-ratio-169 img{
     display: block;
@@ -423,8 +427,16 @@ footer{
         z-index: 20000;
         visibility: visible;
     }
-    .header__navbar-logo > img{
-        margin-left: 20px;
+    .header__navbar{
+        height: 90px;
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+    }
+    .header__navbar-logo a img{
+        position: relative;
+        width: 100px;
+        margin-left: 0px;
     }
     .l_navbar{
         visibility: visible;
@@ -447,9 +459,9 @@ footer{
     .header__navbar-search > input{
         background-color:#f1f1f1;
         border: 1px solid rgba(151, 150, 150, 0.1);
-        
+
     }
-    
+
     .header__navbar-search.active {
         width: 100%;
         position: absolute;
@@ -459,7 +471,7 @@ footer{
         visibility: visible;
         transition: ease-in-out 0.5s;
     }
-    
+
     .header__navbar-logo img{
         width: 60px;
         flex-wrap: wrap;
@@ -496,7 +508,7 @@ footer{
     }
 }
 @media only screen and (max-width: 750px) {
-    
+
     footer{
         display: block;
         padding-top: 10px;

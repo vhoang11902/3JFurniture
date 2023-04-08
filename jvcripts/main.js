@@ -4,10 +4,10 @@ const dotItem = document.querySelectorAll(".dot")
 let imgNuber = imgPosition.length
 let index = 0
 imgPosition.forEach(function(image,index){
-    image.style.left = index*100 +"%" 
+    image.style.left = index*100 +"%"
     dotItem[index].addEventListener("click",function(){
     slider (index)
-    })    
+    })
 })
 function imgSlide (){
     index++;
@@ -31,7 +31,7 @@ menu.addEventListener("click",function(){
 
 window.addEventListener("scroll",function(){
     var header = this.document.querySelector(".header__navbar");
-    header.classList.toggle("sticky",window.scrollY > 0); 
+    header.classList.toggle("sticky",window.scrollY > 0);
 })
 
 const search = document.querySelector('.header__navbar-search')
@@ -43,7 +43,7 @@ toggle_search.onclick = function(){
 // filter drop down---------------//
 
 
-var a_parent =  document.querySelectorAll(".cartegory_filter_btn");
+var a_parent =  document.querySelectorAll(".category_filter_btn");
     a_parent.forEach(function(aitem){
         aitem.onclick = function(){
             aitem.classList.toggle('active');
@@ -72,14 +72,14 @@ items.forEach( items => {
 // loader---------
 window.addEventListener("load", () => {
     const loader = document.querySelector(".loader");
-  
+
     loader.classList.add("loader--hidden");
-  
+
     loader.addEventListener("transitionend", () => {
       document.body.removeChild(loader);
     });
   });
-  
+
 
 //   img------//
 const bigImg = document.querySelector(".product_big-img img")
