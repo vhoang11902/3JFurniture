@@ -39,7 +39,9 @@ ion-icon {
     box-shadow: 0 2px 1rem #615e5e;
     visibility: hidden;
 }
-
+.l_navbar.active{
+width:250px;
+}
 .sub_menu{
     width: 100%;
     overflow: hidden;
