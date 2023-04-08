@@ -48,12 +48,6 @@ toggle_search.onclick = function(){
 }
 
 
-function openSearch(){
-    document.getElementById(".header__navbar-search").toggle.onclick;
-}
-function closeSearch(){
-    document.getElementById("l_navbar").toggle.onclick;
-}
 
 
 // filter drop down---------------//
@@ -72,7 +66,17 @@ items.forEach( items => {
     })
 })
 
+let menuIcon = document.querySelector(".toggle_navbar_menu");
+let menu = document.querySelector(".l_navbar");
+let closeMenu = document.querySelector(".toggle_navbar_menu-close");
 
+menuIcon.onclick =() =>{
+    menu.classList.add("active");
+}
+
+closeMenu.onclick =() =>{
+    menu.classList.remove("active");
+}
 
 // loader---------
 window.addEventListener("load", () => {
