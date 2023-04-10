@@ -130,11 +130,12 @@
                 </div>
                 <div class="product-content-btn-pay">
                     <div class="wrapper-pro">
-                        <span class="minus">-</span>
-                        <span class="num">01</span>
-                        <span class="plus">+</span>
+                        <i id="decrement" onclick="stepper(this)">-</i>
+                        <input type="number" min="1" max="1000" value="1" step="1" 
+                        id="my-input" readonly>
+                        <i id="increment" onclick="stepper(this)">+</i>
                     </div>
-                    <button onclick="alert('Add to Bag success!!!')"><p>Add To Cart</p></button>
+                    <button class="add-to-cart"><p>Add To Cart</p></button>
                 </div>
 
                 <div class="accordion">
@@ -219,7 +220,7 @@
                 <div class="product-container">
                     <a href="#" class="product-card">
                         <div class="product-image">
-                            <img src="img cartegory/1. BONDI LOUNGE/RING0094-PhotoRoom.png" class="product-thumb" alt="">
+                            <img src="img cartegory/2. LOTUS LOUNGE/LOTUS3.jpg" class="product-thumb" alt="">
                             <button class="card-btn">add to bag</button>
                         </div>
                         <div class="product-info">
@@ -229,7 +230,18 @@
                     </a>
                     <a href="#" class="product-card">
                         <div class="product-image">
-                            <img src="img cartegory/1. BONDI LOUNGE/RING0094-PhotoRoom.png" class="product-thumb" alt="">
+                            <img src="img cartegory/3. LOTUS MODULAR/LOTUS 4.jpg" class="product-thumb" alt="">
+                            <button class="card-btn">add to bag</button>
+                        </div>
+                        <div class="product-info">
+                            <h2 class="product-brand">bondi</h2>
+                            <span class="price">100$</span>
+                        </div>
+                    </a>
+
+                    <a href="#" class="product-card">
+                        <div class="product-image">
+                            <img src="img cartegory/3. LOTUS MODULAR/LOTUS 4.jpg" class="product-thumb" alt="">
                             <button class="card-btn">add to bag</button>
                         </div>
                         <div class="product-info">
@@ -239,7 +251,7 @@
                     </a>
                     <a href="#" class="product-card">
                         <div class="product-image">
-                            <img src="img cartegory/1. BONDI LOUNGE/RING0094-PhotoRoom.png" class="product-thumb" alt="">
+                            <img src="img cartegory/3. LOTUS MODULAR/LOTUS 4.jpg" class="product-thumb" alt="">
                             <button class="card-btn">add to bag</button>
                         </div>
                         <div class="product-info">
@@ -247,67 +259,6 @@
                             <span class="price">100$</span>
                         </div>
                     </a>
-                    <a href="#" class="product-card">
-                        <div class="product-image">
-                            <img src="img cartegory/1. BONDI LOUNGE/RING0094-PhotoRoom.png" class="product-thumb" alt="">
-                            <button class="card-btn">add to bag</button>
-                        </div>
-                        <div class="product-info">
-                            <h2 class="product-brand">bondi</h2>
-                            <span class="price">100$</span>
-                        </div>
-                    </a>
-                    <a href="#" class="product-card">
-                        <div class="product-image">
-                            <img src="img cartegory/1. BONDI LOUNGE/RING0094-PhotoRoom.png" class="product-thumb" alt="">
-                            <button class="card-btn">add to bag</button>
-                        </div>
-                        <div class="product-info">
-                            <h2 class="product-brand">bondi</h2>
-                            <span class="price">100$</span>
-                        </div>
-                    </a>
-                    <a href="#" class="product-card">
-                        <div class="product-image">
-                            <img src="img cartegory/1. BONDI LOUNGE/RING0094-PhotoRoom.png" class="product-thumb" alt="">
-                            <button class="card-btn">add to bag</button>
-                        </div>
-                        <div class="product-info">
-                            <h2 class="product-brand">bondi</h2>
-                            <span class="price">100$</span>
-                        </div>
-                    </a>
-                    <a href="#" class="product-card">
-                        <div class="product-image">
-                            <img src="img cartegory/1. BONDI LOUNGE/RING0094-PhotoRoom.png" class="product-thumb" alt="">
-                            <button class="card-btn">add to bag</button>
-                        </div>
-                        <div class="product-info">
-                            <h2 class="product-brand">bondi</h2>
-                            <span class="price">100$</span>
-                        </div>
-                    </a>
-                    <a href="#" class="product-card">
-                        <div class="product-image">
-                            <img src="img cartegory/1. BONDI LOUNGE/RING0094-PhotoRoom.png" class="product-thumb" alt="">
-                            <button class="card-btn">add to bag</button>
-                        </div>
-                        <div class="product-info">
-                            <h2 class="product-brand">bondi</h2>
-                            <span class="price">100$</span>
-                        </div>
-                    </a>
-                    <a href="#" class="product-card">
-                        <div class="product-image">
-                            <img src="img cartegory/1. BONDI LOUNGE/RING0094-PhotoRoom.png" class="product-thumb" alt="">
-                            <button class="card-btn">add to bag</button>
-                        </div>
-                        <div class="product-info">
-                            <h2 class="product-brand">bondi</h2>
-                            <span class="price">100$</span>
-                        </div>
-                    </a>
-                    
                 </div>
         </article>
     </section>

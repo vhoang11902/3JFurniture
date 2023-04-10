@@ -1,40 +1,16 @@
-const productContainers = [...document.querySelectorAll('.product-container')];
-const nxtBtn = [...document.querySelectorAll('.nxt-btn')];
-const preBtn = [...document.querySelectorAll('.pre-btn')];
-
-productContainers.forEach((item, i) => {
-    let containerDimensions = item.getBoundingClientRect();
-    let containerWidth = containerDimensions.width;
-
-    nxtBtn[i].addEventListener('click', () => {
-        item.scrollLeft += containerWidth;
-    })
-
-    preBtn[i].addEventListener('click', () => {
-        item.scrollLeft -= containerWidth;
-    })
-})
-
-const   plus = document.querySelector(".plus"),
-        minus = document.querySelector(".minus"),
-        num = document.querySelector(".num");
-    let a = 1;
-    plus.addEventListener("click", ()=>{
-        a++;
-        a = (a < 10) ? "0" + a : a;
-        num.innerText = a;
-    });
-
-    minus.addEventListener("click", ()=>{
-        if(a > 1){
-            a--;
-            a = (a < 10) ? "0" + a : a;
-            num.innerText = a;
-        }
-    });
-    
-
-
+const myInput = document.getElementById("my-input");
+function stepper(btn){
+    let id = btn.getAttribute("id");
+    let min = myInput.getAttribute("min");
+    let max = myInput.getAttribute("max");
+    let step = myInput.getAttribute("step");
+    let val = myInput.getAttribute("value");
+    let calcStep = (id =="increment") ? (step*1) : (step *-1);
+    let newValue = parseInt(val) + calcStep;
+    if(newValue >= min && newValue <= max){
+        myInput.setAttribute("value",newValue);
+    }
+}
 // décrioption
 const accordionItemHeaders = document.querySelectorAll(".accordion-item-header");
 
