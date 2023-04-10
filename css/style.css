@@ -185,6 +185,7 @@ ion-icon {
 }
 .header__navbar-logo a img {
     display: flex;
+    justify-content: center;
     align-items: center;
     top:13%;
     width: 120px;
