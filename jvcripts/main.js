@@ -66,18 +66,6 @@ items.forEach( items => {
     })
 })
 
-let menuIcon = document.querySelector(".toggle_navbar_menu");
-let menuu = document.querySelector(".l_navbar");
-let closeMenu = document.querySelector(".toggle_navbar_menu-close");
-
-menuIcon.onclick =() =>{
-    menu.classList.add("active");
-}
-
-closeMenu.onclick =() =>{
-    menu.classList.remove("active");
-}
-
 // loader---------
 window.addEventListener("load", () => {
     const loader = document.querySelector(".loader");
