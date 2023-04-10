@@ -513,11 +513,11 @@ footer{
 }
 @media only screen and (max-width: 750px) {
     .header__navbar{
-        height: 70px;
+        height: 50px;
 
     }
     .header__navbar-logo a img{
-        width: 80px;
+        width: 60px;
     }
     ion-icon{
         font-size: 20px;
