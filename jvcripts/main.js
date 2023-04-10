@@ -39,7 +39,6 @@ const toggle_search = document.querySelector('.icon-search')
 toggle_search.onclick = function(){
     search.classList.toggle('active');
 }
-
 // filter drop down---------------//
 
 
@@ -67,7 +66,17 @@ items.forEach( items => {
     })
 })
 
+let menuIcon = document.querySelector(".toggle_navbar_menu");
+let menuu = document.querySelector(".l_navbar");
+let closeMenu = document.querySelector(".toggle_navbar_menu-close");
 
+menuIcon.onclick =() =>{
+    menu.classList.add("active");
+}
+
+closeMenu.onclick =() =>{
+    menu.classList.remove("active");
+}
 
 // loader---------
 window.addEventListener("load", () => {
