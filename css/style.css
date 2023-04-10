@@ -186,6 +186,7 @@ ion-icon {
 .header__navbar-logo a img {
     display: flex;
     width: 120px;
+    top:15%;
     position: absolute;
     left: 60px;
 }
