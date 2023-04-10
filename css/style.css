@@ -74,6 +74,7 @@ ion-icon {
 }
 
 .cart.active{
+    z-index: 100000;
     right: 0;
 }
 .cart-lable{
@@ -217,8 +218,8 @@ ion-icon {
 }
 .header__navbar-search-btn{
     display: flex;
-    right: 0%;
     position: absolute;
+    right: 0%;
     z-index: 2;
     width: 45px;
     height: 45px;
@@ -227,6 +228,7 @@ ion-icon {
     background-color: transparent;
     border-radius: 5px;
     border: none;
+    color:black;
 }
 .header__navbar-search-btn:hover{
     background-color: #ccc;
@@ -459,7 +461,10 @@ footer{
         border: 1px solid rgba(151, 150, 150, 0.1);
 
     }
-
+    .header__navbar-search > input:focus{
+        color: black;
+        outline: 1px solid gainsboro;
+    }
     .header__navbar-search.active {
         width: 100%;
         position: absolute;
